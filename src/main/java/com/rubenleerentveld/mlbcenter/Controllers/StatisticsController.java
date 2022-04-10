@@ -12,7 +12,7 @@ public class StatisticsController {
 
     @RequestMapping("/Teams")
     public ResponseEntity<?> get(){
-        return new ResponseEntity<>("NYY, CAR", HttpStatus.OK);
+        return new ResponseEntity<>("NYY, CAR, TOR", HttpStatus.OK);
     }
     
 }
