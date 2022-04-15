@@ -1,13 +1,25 @@
 package com.rubenleerentveld.mlbcenter.Models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.lang.reflect.Array;
-import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class NewOrderModel {
 
     String customerId;
-    Date orderDate;
+
+    @JsonFormat(pattern = "yyyy/MM/dd")
+    LocalDate orderDate;
+
+    Array productIds;
+
+    public NewOrderModel(String customerId, LocalDate orderDate){
+        this.customerId = customerId;
+        this.orderDate = orderDate;
+    }
+
 
     public String getCustomerId() {
         return customerId;
@@ -17,11 +29,11 @@ public class NewOrderModel {
         this.customerId = customerId;
     }
 
-    public Date getOrderDate() {
+    public LocalDate getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDate orderDate) {
         this.orderDate = orderDate;
     }
 
@@ -33,7 +45,7 @@ public class NewOrderModel {
         this.productIds = productIds;
     }
 
-    Array productIds;
+
 
 
 
