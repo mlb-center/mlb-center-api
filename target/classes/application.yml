@@ -1,2 +1,9 @@
 server:
   port: 9001
+
+rabbitmq:
+  host: 192.168.24.235
+  virtualhost: /
+  port: '5672'
+  username: guest
+  password: guest
