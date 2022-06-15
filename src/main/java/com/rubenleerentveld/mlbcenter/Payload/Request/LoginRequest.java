@@ -1,4 +1,4 @@
-package com.rubenleerentveld.mlbcenter.Payload;
+package com.rubenleerentveld.mlbcenter.Payload.Request;
 
 import javax.validation.constraints.NotBlank;
 
