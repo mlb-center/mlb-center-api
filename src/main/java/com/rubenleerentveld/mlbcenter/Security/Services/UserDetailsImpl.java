@@ -1,0 +1,2 @@
+package com.rubenleerentveld.mlbcenter.Security.Services;public class UserDetailsImpl {
+}
